@@ -1,0 +1,19 @@
+They are various ways to create Object in JavaScript...since everything in JS is an Object, we have
+to be careful how we create Object and always follow the best approach for a certain scenario 
+
+Ways to Create Object
+  Object literal
+  Constructor function
+
+The two custom methods above have their strengths and short-coming which we will discuss later
+
+                                              IMPORTANT!!!!
+You may be wondering why you would want to leave the responsibility of the construction of objects 
+to others rather than simply calling a constructor function with the new keyword directly. 
+The reason is that that constructor functions are limited in their control over the overall creation 
+process and sometimes you will need to hand over control to a factory that has broader knowledge.
+
+This includes scenarios in which the creation process involves object caching, sharing or re-using 
+of objects, complex logic, or applications that maintain object and type counts, and objects that 
+interact with different resources or devices. If your application needs more control over the object 
+creation process, consider using a Factory.
